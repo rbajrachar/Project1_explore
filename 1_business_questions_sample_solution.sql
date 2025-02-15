@@ -30,7 +30,7 @@ SELECT COUNT(DISTINCT(product_id)) AS products_sold
 FROM order_items;
 	-- 32951
     
-SELECT 3613 / 32951; -- This step can also be done on a calculator
+SELECT 3613 / 32951; 
 	-- 0.1096, therefore 11%
 
 -- What’s the average price of the products being sold?
@@ -66,9 +66,9 @@ WHERE pt.product_category_name_english IN ('audio', 'cine_photo', 'consoles_game
         'tablets_printing_image', 'telephony', 'fixed_telephony')
 GROUP BY price_range
 ORDER BY 1 DESC;
-	-- 10393 cheap
-    -- 4616 mid-range
-    -- 238 expensive
+-- 10393 cheap
+-- 4616 mid-range
+-- 238 expensive
 
 -- average, min and max of the tech products
 SELECT AVG(oi.price), MIN(oi.price), MAX(oi.price)
